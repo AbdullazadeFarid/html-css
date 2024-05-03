@@ -51,7 +51,7 @@ a {
   margin-top: 60px;
 }
 .first_section_left_title {
-  font-size: clamp(2.5rem, 4.5vw, 12rem);
+  font-size: clamp(1.5rem, 4.5vw, 12rem);
 }
 .first_section_left_text {
   max-width: 511px;
