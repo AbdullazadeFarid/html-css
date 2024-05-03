@@ -1,0 +1,200 @@
+@import "../mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0e0e0e;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1560px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+//header start
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &_logo {
+    &_icon {
+    }
+  }
+
+  &_nav {
+    display: flex;
+    align-items: center;
+    gap: 118px;
+    flex-wrap: wrap;
+
+    &_select {
+      font-size: 21px;
+      border: none;
+
+      @include mobile {
+        display: none;
+      }
+    }
+    &_menubar {
+    }
+  }
+}
+//header end
+
+.nav {
+  margin-top: 60px;
+
+  &_items {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    list-style-type: none;
+
+    &_item {
+      color: #fff;
+
+      &_link {
+        color: #fff;
+        text-decoration: none;
+      }
+      &_link_yellow {
+        color: rgba(253, 206, 0, 1);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main {
+  .section {
+    &_top {
+      display: flex;
+      gap: 46px;
+      align-items: center;
+      margin-top: 80px;
+      @include tablet{
+        flex-direction: column;
+
+      }
+      h2 {
+        color: rgba(253, 206, 0, 1);
+        font-size: clamp(1rem, 3.5vw, 9rem);
+      }
+      &_img {
+        max-width: 605px;
+        min-width: 200px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &_desc {
+        color: #fff;
+        width: 800px;
+        @include tablet{
+          width: 100%;
+          flex-direction: column;
+          padding: 20px;
+
+        }
+
+        p {
+          line-height: 32px;
+          padding: 20px;
+        }
+      }
+    }
+
+    &_bottom {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 46px;
+      margin-top: 80px;
+      @include tablet{
+        flex-direction: column;
+
+      }
+
+      h2 {
+        color: rgba(253, 206, 0, 1);
+        font-size: clamp(1rem, 3.5vw, 9rem);
+
+      }
+
+      &_img {
+        max-width: 605px;
+        min-width: 200px;
+        img {
+          width: 100%;
+        }
+      }
+
+      &_desc {
+        color: #fff;
+        width: 800px;
+
+        @include tablet{
+          width: 100%;
+          padding: 20px;
+
+        }
+        p {
+          line-height: 32px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+//footer start
+
+
+.footer{
+  padding: 118px 0px;
+
+  &_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+      flex-direction: column;
+      row-gap: 26px;
+    }
+    &_items{
+      line-height: 43px;
+h3{
+  color: #fff;
+}
+
+      &_item{
+        font-size: 21px;
+
+        &_link{
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      &_icons{
+        display: flex;
+    align-items: center;
+    gap: 20px;
+      }
+    }
+
+
+  }
+
+}

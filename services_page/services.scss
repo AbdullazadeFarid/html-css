@@ -1,0 +1,180 @@
+@import "../mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0e0e0e;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1560px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+//header start
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_logo {
+      &_icon {
+      }
+    }
+
+    &_nav {
+      display: flex;
+      align-items: center;
+      gap: 118px;
+      &_select {
+        font-size: 21px;
+        border: none;
+
+        @include mobile {
+          display: none;
+        }
+      }
+      &_menubar {
+      }
+    }
+  }
+
+
+  .navigation {
+    &_nav {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 74px;
+
+      &_item {
+        color: #fff;
+        a{
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      .color {
+        color: rgba(253, 206, 0, 1);
+      }
+    }
+
+    &_img {
+      margin-top: 57px;
+
+      img {
+        width: 100%;
+        height: 312px;
+
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
+
+  .services{
+    .a{
+      color: #fff;
+      font-size: clamp(1rem, 2.5vw, 7rem);
+
+    }
+
+    &_products{
+
+      &_card{
+        display: flex;
+        gap: 32px;
+        margin-top: 30px;
+@include tablet{
+
+  flex-wrap: wrap;
+justify-content: center;
+}
+
+        &_left{
+
+        }
+        &_right{
+          width: 419px;
+          h2{
+            color:
+            rgba(253, 206, 0, 1);
+            line-height: 30px;
+            margin-top: 32px;
+            gap: 59px;
+
+
+          }
+          p{
+            color: #fff;
+            line-height: 28px;
+            margin-top: 22px;
+          }
+
+          .send{
+            margin-top: 30px;
+            h3{
+              color: #fff;
+              font-size: 27px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+  //footer start
+
+
+.footer{
+  padding: 118px 0px;
+
+  &_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile{
+      flex-direction: column;
+      row-gap: 26px;
+    }
+    &_items{
+      line-height: 43px;
+h3{
+  color: #fff;
+}
+
+      &_item{
+        font-size: 21px;
+
+        &_link{
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+
+      &_icons{
+        display: flex;
+    align-items: center;
+    gap: 20px;
+      }
+    }
+
+
+  }
+
+}
