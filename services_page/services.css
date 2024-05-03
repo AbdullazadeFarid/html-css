@@ -115,6 +115,7 @@ body {
 }
 .footer_nav_items {
   line-height: 43px;
+  list-style-type: none;
 }
 .footer_nav_items h3 {
   color: #fff;
